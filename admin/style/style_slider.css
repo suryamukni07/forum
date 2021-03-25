@@ -1,0 +1,60 @@
+.container{
+	margin-left:auto;
+	margin-right:auto;
+	width:280px;
+}
+#slider{
+	height:400px;
+	margin-bottom:10px;
+	position:relative;
+}
+#slides{
+	position:absolute;
+	top:15px;
+	left:0px;
+	z-index:100;
+}
+.slides_container div.slide{
+	width:280px;
+	height:400px;
+	display:block;
+}
+#slider .next, #slider .prev{
+	position:absolute;
+	top:170px;
+	left:0px;
+	width:24px;
+	height:43px;
+	display:block;
+	z-index:101;
+}
+#slider .next{
+	left:251px;
+}
+.pagination{
+	margin:10px auto 0;
+	width:70px;
+}
+.pagination li{
+	float:left;
+	margin:0 1px;
+	list-style:none;
+}
+.pagination li a{
+	display:block;
+	width:11px;
+	height:0;
+	padding-top:12px;
+	background-image:url(../images/pagination.png);
+	background-position:0 0;
+	float:left;
+	overflow:hidden;
+}
+.pagination li.current a{
+	background-position:0 -12px;
+}
+/*
+	Caption
+*/
+
+

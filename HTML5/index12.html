@@ -1,0 +1,136 @@
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1">
+    <link rel="apple-touch-icon" href="s/1.jpg">
+    <script type="text/javascript" src="r/jq.js"></script>
+    <script type="text/javascript" src="r/jt.js"></script>
+    <script type="text/javascript" src="r/jm.js"></script>
+    <script type="text/javascript" src="r/ji.js"></script>
+    <script type="text/javascript" src="r/touch.js"></script>
+    <script type="text/javascript" src="r/jf.js"></script>
+    <link rel="stylesheet" type="text/css" href="r/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 320px)" href="r/mobile.css" />
+</head>
+<body>
+<div id="trace" style="position:absolute ; z-index:1000;"></div>
+<div class="container" id="preload">
+    <div  class="progress-box">
+        <div><img src="r/loadingAnimation.gif" /></div>
+        <div class="progress-text">Powered by aXmag</div>
+    </div>
+</div>
+<div class="container" id="error"  style="display:none;">
+    <div  id="error_local" style="display:none;" class="error-box">
+        To test the HTML5 version locally, please open the link in Safari.<br>
+        Or, please upload files to your server and test the HTML5 files. <br>
+        You may find it useful to check out the online manual for more tips:<br>
+        <a href="http://www.axmag.com/manual/PC_Pro/index.htm" target="_blank">http://www.axmag.com/manual/PC_Pro/index.htm</a><br>
+    </div>
+    <div  id="error_html5" style="display:none;" class="error-box">
+        This web browser does not support HTML5, please open the link in Safari or other web browsers to test HTML5 version locally.<br>
+        Safari can be downloaded from:<br>
+        <a href="http://www.apple.com/safari/download/" target="_blank">http://www.apple.com/safari/download/</a>
+    </div>
+</div>
+<div class="container"  id="entity" style="display:none;">
+        <div id="book-header" class="controls">
+            <ul class="menu-left">
+                <li class="cmditem menu-home"><a href="javascript:" onclick="first();event.stopPropagation();"></a></li>
+                <li class="cmditem menu-thumb"><a href="javascript:" onclick="thumb();event.stopPropagation();"></a></li>
+                <li class="cmditem menu-zoomin" id="btn_zoom"><a href="javascript:" onclick="loadShow(! isLarge);event.stopPropagation();"></a></li>
+            </ul>
+            <ul class="menu-right">
+                <li class="cmditem menu-share"><a href="javascript:" onclick="share();event.stopPropagation();"></a></li>
+                <li class="cmditem menu-help"><a href="javascript:" onclick="help();event.stopPropagation();"></a></li>
+            </ul>
+            <div style="clear:both"></div>
+        </div>
+        <div id="book-container">
+            <div id="book-content">
+                <div id="book-nav-left" onclick="prev();event.stopPropagation();" class="book-nav book-nav-left">
+                    <img src="r/canvas.png" class="flipx" /></div>
+                <div id="book-nav-right" onclick="next();event.stopPropagation();" class="book-nav book-nav-right">
+                    <img src="r/canvas.png" /></div>
+                <div id="magazine">
+                </div>
+            </div>
+        </div>
+        <div id="large-container" >
+            <div id="large-content">
+                <div class="book-nav" id="large-nav-left" onclick="largeLeft(event)"><img src="r/canvas.png" class="flipx" /></div>
+                <div class="book-nav" id="large-nav-right" onclick="largeRight(event)"><img src="r/canvas.png" /></div>
+                <div id="large-wrapper">
+                    <div id="large-scroller"></div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="book-footer" onclick="event.stopPropagation();" >
+            <div id="thumb-nav-dot" onclick="thumb()"></div>
+            <div id="thumb-content">
+                <div id="thumb-nav-left" onclick="thumbLeft(event)" ><span></span></div>
+                <div id="thumb-nav-right" onclick="thumbRight(event)"><span></span></div>
+                <div id="thumb-pages"></div>
+            </div> 
+        </div>
+       
+        <div id="win-share" class="book-dialog"> 
+           <p><b>Share:</b><br></p>
+            <ul class="sharelist">
+		        <li class="share-mail"><a href="javascript:" onclick="shareto('mail')"></a></li>
+		        <li class="share-twitter"><a href="javascript:" onclick="shareto('twitter')"></a></li>
+		        <li class="share-facebook"><a href="javascript:" onclick="shareto('facebook')"></a></li> 
+            </ul><div style="clear:both"></div>
+            <br>
+	        <p><b>Url:</b><br><span id="lbl_Url"></span></p>
+        </div>
+        
+        <div id="win-help" class="book-dialog">
+	        <p><b>Title:</b><br><span id="lbl_Title"></span></p>
+	        <p><b>Author:</b><br><span id="lbl_Author"></span></p>
+	        <p class="poweredby">powered by axmag</p>
+        </div>
+        
+        <div style="display:none;">
+            <bgsound volume="-5000" id="sound_start" loop="1" src="r/start.mp3">
+            <bgsound volume="-5000" id="sound_end" loop="1" src="r/end.mp3">
+            <bgsound volume="-5000" id="sound_full" loop="1" src="r/full.mp3">
+            <audio id="audio-clip" style="border:1px solid red"></audio>
+            <audio id="audio-bgsound"  type="audio/mp3" autoplay="autoplay" ></audio>
+        </div>
+	
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script><script type="text/javascript"> _uacct = "UA-318942-10";urchinTracker();</script>
+	<div style="display:none;">
+<a href="data/string.html">title</a>
+	</div>
+</div>
+</body>
+</html>
+<script language="javascript">
+function checkHTML5()
+{
+    try
+    {
+        document.createElement("canvas").getContext("2d");
+        return true ;
+    } 
+    catch(e) 
+    {
+        return false ;
+    }
+    
+}
+
+if (checkHTML5() == false)
+{
+    $("#error").show();
+    $("#error_html5").show();
+    $("#preload").hide();
+    $("#entity").hide();
+}
+else
+{
+    loadSetting();
+}
+</script>

@@ -1,0 +1,12 @@
+/* Slider */
+.sompret-wrapper {float:right; position: relative;}
+.sompret { overflow: hidden; position: relative; width:300px; height:400px;}
+.image_reel { position: absolute; top: 0; left: 0; }
+.image_reel img {overflow: hidden;float: left;width:300px; height:auto;}
+.paging {background:#878773; border:1px solid #676756;padding: 4px 0 2px; text-align: right;z-index: 100; }
+.paging a { text-indent:-9999px; background:url(http://3.bp.blogspot.com/-_RkTTrabRbs/UQWYmksVCYI/AAAAAAAABaU/3vvF1qFSAYI/s1600/slider_item.png) no-repeat center; width:10px; height:10px; display:inline-block;margin:3px; border:none; outline:none; }
+.paging a.active { background:url(http://4.bp.blogspot.com/-b9OEmVdL6Q4/URA_BL7OXWI/AAAAAAAAB2k/c9exOQaNu2U/s1600/slider_item_active.png) no-repeat center; border:none; outline:none;}
+.paging a:hover {font-weight: bold; border:none; outline:none;}
+.crott { width:280px; display: none; position:absolute;bottom: 0; left: 0; z-index: 101; background: url(http://4.bp.blogspot.com/-PpOJ-vHwxvc/T5mGXWpHVCI/AAAAAAAAAqQ/Y1VmLDvoeHI/s1600/uj-opacity-40.png);padding:5px 10px;  }
+.crott a{color: #fff;font: 16px Oswald }
+.crott p{color: #fff;font: 12px Arial;}

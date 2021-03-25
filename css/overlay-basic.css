@@ -1,0 +1,42 @@
+    /* style untuk elemen didalam overlay */
+    .details {
+	    position:absolute;
+		top:30px;
+	    left:30px;
+	    font-size:12px;
+	    color:#FFF;
+	    width:100%;
+    }
+
+/* the overlayed element */
+.simple_overlay {	
+	/* must be initially hidden */
+	display:none;
+	
+	/* place overlay on top of other elements */
+	z-index:10000;
+	
+	/* styling */
+	background-color:#900; /* ganti warna login */
+	
+	width:30%;	
+	min-height:40%;
+	border:5px solid #222;
+	
+	/* CSS3 styling for latest browsers */
+	-moz-box-shadow:0 0 90px 5px #000;
+	-webkit-box-shadow: 0 0 90px #000;	
+}
+
+/* close button positioned on upper right corner */
+.simple_overlay .close {
+	background-image:url(img/close.png);
+	position:absolute;
+	right:-15px;
+	top:-15px;
+	cursor:pointer;
+	height:35px;
+	width:35px;
+}
+
+	/* end overlay styling */

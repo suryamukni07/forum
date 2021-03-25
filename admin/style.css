@@ -1,0 +1,852 @@
+		*{
+			padding: 0;margin: 0;
+		}
+		h1, h2, h3, h4, h5{
+			font-family: 'Concert One', cursive;
+		}
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+
+		body{
+			background: -moz-radial-gradient(circle, #fff, #ddd);
+			background: -webkit-radial-gradient(circle, #fff, #ddd);
+			background-image: url(robots.png) bottom right no-repeat fixed;
+			font-family: 'Source Sans Pro', sans-serif;
+		}
+		/* Menu atas */
+		.fly{
+			background-color: #a5a2a2;
+			background-image: -webkit-linear-gradient(center top , #a5a2a2 0%, #a5a2a2 100%);
+			background-image: -moz-linear-gradient(center top , #a5a2a2 0%, #a5a2a2 100%);
+			background-image: -o-linear-gradient(center top , #a5a2a2 0%, #a5a2a2 100%);
+			background-image: -ms-linear-gradient(center top , #a5a2a2 0%, #a5a2a2 100%);
+			background-image: linear-gradient(center top , #a5a2a2 0%, #a5a2a2 100%);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			-webkit-box-shadow: 0 2px 0 #a5a2a2;
+			box-shadow: 0 2px 0 #a5a2a2;
+			font-size: 13px;
+			height: 30px;
+			left: 0;
+			right: 0;
+			top: 0;
+			width: 100%;
+
+		}
+			.fly .content ul{
+				list-style-type: none;
+				float: left;
+			}
+				.fly .content ul li{
+					display: inline;
+				}
+					.fly .content ul li a{
+						display: inline-block;
+						text-decoration: none;
+						padding: 7px 10px;
+						border-right: 1px solid rgba(255, 255, 255, 0.125);
+						color: #f8f8f8;
+						font-weight: bold;
+					}
+					.fly .content ul li a:hover, .fly .content ul li a.active{
+						background: -webkit-linear-gradient(top, #a5a2a2, #1382cb);
+						background: -moz-linear-gradient(top, #a5a2a2, #1382cb);
+						background: -o-linear-gradient(top, #a5a2a2, #1382cb);
+						background: -ms-linear-gradient(top, #a5a2a2, #1382cb);
+						background: linear-gradient(top, #a5a2a2, #1382cb);
+					}
+
+			.fly .content .ribbon{
+				text-align: center;
+				float: right;
+				width: 100px;
+				background: #fff000;
+				padding: 2px 10px;
+				-webkit-box-shadow: 0 8px 6px -6px #999;
+				   -moz-box-shadow: 0 8px 6px -6px #999;
+				        box-shadow: 0 8px 6px -6px #999;				
+			}
+			.fly .content .ribbon:hover{
+				background: orange;
+			}	
+
+		/* Content untuk semua */
+		.content{
+			max-width: 1250px;
+			margin: 0 auto;
+		}
+		.content1{
+			max-width: 950px;
+			margin: 0 auto;
+		}
+
+		.flying-robot{
+			position:fixed; top:50px; left:10px;padding:10px;
+			height: 150px;
+			width: 150px;
+		}
+
+		/* Halaman Utama */
+		.main{
+			margin-top:50px;
+			margin-bottom: 50px
+		}
+			.main .content p{
+				margin-bottom: 30px;
+			}
+
+		/* Bagian Footer */
+		.footer{
+			padding: 5px 0;
+			background: -webkit-linear-gradient(left, #ccc, #999);
+			background: -moz-linear-gradient(left, #ccc, #999);
+			background: -o-linear-gradient(left, #ccc, #999);
+			background: -ms-linear-gradient(left, #ccc, #999);
+			background: linear-gradient(left, #ccc, #999);
+			bottom: 0;
+			position: fixed;
+			width: 100%;
+			font-size: 12px;
+		}
+			.footer a{
+				text-decoration: none;
+				font-weight: bold;
+				color: #000;
+			}
+
+@media (max-width: 767px) {
+	.flying-robot{
+		position:relative;
+		text-align: center;
+		top:60px;		
+	}	
+	.fly{
+		text-align: center;
+	}
+	.fly .content ul li a{
+		border:none;
+	}
+	.content{
+		width: 100%;
+	}
+	.main .content h1,
+	.main .content p{
+		margin: 10px;
+	}
+	.footer{
+		text-align: center;
+	}
+}
+@media (max-width: 520px){
+	.fly{
+
+			    height: 60px;
+	}
+	.fly .content .ribbon{
+		display: block;
+		width: 100%;
+	}
+	.main{
+		margin-top:80px;
+		margin-bottom: 80px
+	}	
+}
+button.css3button {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+	padding: 9px 14px;
+	background: -moz-linear-gradient(
+		top,
+		#fc1717 0%,
+		#f50000 25%,
+		#f7ff00 50%,
+		#0cf500 75%,
+		#00ff00);
+	background: -webkit-gradient(
+		linear, left top, left bottom,
+		from(#fc1717),
+		color-stop(0.25, #f50000),
+		color-stop(0.50, #f7ff00),
+		color-stop(0.75, #0cf500),
+		to(#00ff00));
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #b85f00;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px -1px 0px rgba(255,255,255,0.7);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px -1px 0px rgba(255,255,255,0.7);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px -1px 0px rgba(255,255,255,0.7);
+	text-shadow:
+		0px -1px 1px rgba(000,000,000,0.2),
+		0px 1px 0px rgba(255,255,255,0.3);
+}
+.fly1{
+			background-color: #a5a2a2;
+			background-image: -webkit-linear-gradient(center bottom , #a5a2a2 0%, #a5a2a2 100%);
+			background-image: -moz-linear-gradient(center bottom , #a5a2a2 0%, #a5a2a2 100%);
+			background-image: -o-linear-gradient(center bottom , #a5a2a2 0%, #a5a2a2 100%);
+			background-image: -ms-linear-gradient(center bottom , #a5a2a2 0%, #a5a2a2 100%);
+			background-image: linear-gradient(center bottom , #a5a2a2 0%, #a5a2a2 100%);
+			border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+			-webkit-box-shadow: 0 2px 0 #0E5A8C;
+			box-shadow: 0 2px 0 #0E5A8C;
+			font-size: 13px;
+			height: 30px;
+			left: 0;
+			position: fixed;
+			right: 0;
+			bottom: 0;
+			width: 100%;
+
+		}
+
+.form-2 {
+    /* Size and position */
+    width: 230px;
+	height:320px;
+    margin: 0px auto 10px;
+    padding: 15px;
+    position: relative;
+
+    /* Styles */
+    background: #fffaf6;
+    border-radius: 4px;
+    color: #7e7975;
+    box-shadow:
+        0 2px 2px rgba(0,0,0,0.2),        
+        0 1px 5px rgba(0,0,0,0.2),        
+        0 0 0 12px rgba(255,255,255,0.4); 
+}
+
+.form-2 h1 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #bdb5aa;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #EBE6E2;
+    text-shadow: 0 2px 0 rgba(255,255,255,0.8);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.form-2 h1 .log-in,
+.form-2 h1 .sign-up {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-2 h1 .log-in {
+    color: #6c6763;
+    padding-right: 2px;
+}
+
+.form-2 h1 .sign-up {
+    color: #ffb347;
+    padding-left: 2px;
+}
+
+.form-2 .float {
+    width: 100%;
+    float: left;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,1);
+}
+
+.form-2 .float:first-of-type {
+    padding-right: 5px;
+}
+
+.form-2 .float:last-of-type {
+    padding-left: 5px;
+}
+
+.form-2 label {
+    display: block;
+    padding: 0 0 5px 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    font-size: 11px;
+}
+
+.form-2 label i {
+    margin-right: 5px; /* Gap between icon and text */
+    display: inline-block;
+    width: 10px;
+}
+
+.form-2 input[type=text],.form-2 select,
+.form-2 input[type=password] {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 3px solid #ebe6e2;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.form-2 input[type=text]:hover,
+.form-2 input[type=password]:hover {
+    border-color: #CCC;
+}
+
+.form-2 label:hover ~ input {
+    border-color: #CCC;
+}
+
+.form-2 input[type=text]:focus,
+.form-2 input[type=password]:focus {
+    border-color: #BBB;
+    outline: none; /* Remove Chrome's outline */
+}
+
+.form-2 input[type=submit],
+.form-2 .log-twitter {
+    /* Size and position */
+    width: 45%;
+    height: 38px;
+    float: left;
+    position: relative;
+
+    /* Styles */
+    box-shadow: inset 0 1px rgba(255,255,255,0.3);
+    border-radius: 3px;
+    cursor: pointer;
+
+    /* Font styles */
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 30px; /* Same as height */
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-2 input[type=submit] {
+    margin-left: 1%;
+    background: #fbd568; /* Fallback */
+    background: -moz-linear-gradient(#fbd568, #ffb347);
+    background: -ms-linear-gradient(#fbd568, #ffb347);
+    background	: -o-linear-gradient(#fbd568, #ffb347);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fbd568), to(#ffb347));
+    background: -webkit-linear-gradient(#fbd568, #ffb347);
+    background: linear-gradient(#fbd568, #ffb347);
+    border: 1px solid #f4ab4c;
+    color: #996319;
+    text-shadow: 0 1px rgba(255,255,255,0.3);
+}
+
+.form-2 .log-twitter {
+
+    margin-right: 1%;
+    background: #34a5cf; /* Fallback */
+    background: -moz-linear-gradient(#34a5cf, #2a8ac4);
+    background: -ms-linear-gradient(#34a5cf, #2a8ac4);
+    background: -o-linear-gradient(#34a5cf, #2a8ac4);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#34a5cf), to(#2a8ac4));
+    background: -webkit-linear-gradient(#34a5cf, #2a8ac4);
+    background: linear-gradient(#34a5cf, #2a8ac4);
+    border: 1px solid #2b8bc7;
+    color: #ffffff;
+    text-shadow: 0 -1px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+.form-2 input[type=submit]:hover,
+.form-2 .log-twitter:hover {
+    box-shadow: 
+        inset 0 1px rgba(255,255,255,0.3), 
+        inset 0 20px 40px rgba(255,255,255,0.15);
+}
+
+.form-2 input[type=submit]:active,
+.form-2 .log-twitter:active{
+    top: 1px;
+}
+
+/* Fallback fro broswers that don't support box shadows */
+.no-boxshadow .form-2 input[type=submit]:hover {
+    background: #ffb347;
+}
+
+.no-boxshadow .form-2 .log-twitter:hover {
+    background: #2a8ac4;
+}
+
+.form-2 p:last-of-type {
+    clear: both;    
+}
+
+.form-2 .opt {
+    text-align: right;
+    margin-right: 3px;
+}
+
+.form-2 label[for=showPassword] {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.form-2 input[type=checkbox] {
+    vertical-align: middle;
+    margin: -1px 5px 0 1px;
+}
+
+.form-22 {
+    /* Size and position */
+    width: 230px;
+	height:380px;
+    margin: 0px auto 10px;
+    padding: 15px;
+    position: relative;
+
+    /* Styles */
+    background: #fffaf6;
+    border-radius: 4px;
+    color: #7e7975;
+    box-shadow:
+        0 2px 2px rgba(0,0,0,0.2),        
+        0 1px 5px rgba(0,0,0,0.2),        
+        0 0 0 12px rgba(255,255,255,0.4); 
+}
+
+.form-22 h1 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #bdb5aa;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #EBE6E2;
+    text-shadow: 0 2px 0 rgba(255,255,255,0.8);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.form-22 h1 .log-in,
+.form-22 h1 .sign-up {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-22 h1 .log-in {
+    color: #6c6763;
+    padding-right: 2px;
+}
+
+.form-22 h1 .sign-up {
+    color: #ffb347;
+    padding-left: 2px;
+}
+
+.form-22 .float {
+    width: 100%;
+    float:right;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,1);
+}
+
+.form-22 .float:first-of-type {
+    padding-right: 5px;
+}
+
+.form-22 .float:last-of-type {
+    padding-left: 5px;
+}
+
+.form-22 label {
+    display: block;
+    padding: 0 0 5px 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    font-size: 11px;
+}
+
+.form-22 label i {
+    margin-right: 5px; /* Gap between icon and text */
+    display: inline-block;
+    width: 10px;
+}
+
+.form-22 input[type=text],
+.form-22 input[type=password] {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 3px solid #ebe6e2;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.form-22 input[type=text]:hover,
+.form-22 input[type=password]:hover {
+    border-color: #CCC;
+}
+
+.form-22 label:hover ~ input {
+    border-color: #CCC;
+}
+
+.form-22 input[type=text]:focus,
+.form-22 input[type=password]:focus {
+    border-color: #BBB;
+    outline: none; /* Remove Chrome's outline */
+}
+
+.form-22 input[type=submit],
+.form-22 .log-twitter {
+    /* Size and position */
+    width: 45%;
+    height: 30px;
+    float: left;
+    position: relative;
+
+    /* Styles */
+    box-shadow: inset 0 1px rgba(255,255,255,0.3);
+    border-radius: 3px;
+    cursor: pointer;
+
+    /* Font styles */
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 12px;
+    line-height: 30px; /* Same as height */
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-22 input[type=submit] {
+    margin-left: 1%;
+    background: #fbd568; /* Fallback */
+    background: -moz-linear-gradient(#fbd568, #ffb347);
+    background: -ms-linear-gradient(#fbd568, #ffb347);
+    background	: -o-linear-gradient(#fbd568, #ffb347);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fbd568), to(#ffb347));
+    background: -webkit-linear-gradient(#fbd568, #ffb347);
+    background: linear-gradient(#fbd568, #ffb347);
+    border: 1px solid #f4ab4c;
+    color: #996319;
+    text-shadow: 0 1px rgba(255,255,255,0.3);
+}
+
+.form-22 .log-twitter {
+
+    margin-right: 1%;
+    background: #34a5cf; /* Fallback */
+    background: -moz-linear-gradient(#34a5cf, #2a8ac4);
+    background: -ms-linear-gradient(#34a5cf, #2a8ac4);
+    background: -o-linear-gradient(#34a5cf, #2a8ac4);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#34a5cf), to(#2a8ac4));
+    background: -webkit-linear-gradient(#34a5cf, #2a8ac4);
+    background: linear-gradient(#34a5cf, #2a8ac4);
+    border: 1px solid #2b8bc7;
+    color: #ffffff;
+    text-shadow: 0 -1px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+.form-22 input[type=submit]:hover,
+.form-22 .log-twitter:hover {
+    box-shadow: 
+        inset 0 1px rgba(255,255,255,0.3), 
+        inset 0 20px 40px rgba(255,255,255,0.15);
+}
+
+.form-22 input[type=submit]:active,
+.form-22 .log-twitter:active{
+    top: 1px;
+}
+
+/* Fallback fro broswers that don't support box shadows */
+.no-boxshadow .form-22 input[type=submit]:hover {
+    background: #ffb347;
+}
+
+.no-boxshadow .form-22 .log-twitter:hover {
+    background: #2a8ac4;
+}
+
+.form-22 p:last-of-type {
+    clear: both;    
+}
+
+.form-22 .opt {
+    text-align: right;
+    margin-right: 3px;
+}
+
+.form-22 label[for=showPassword] {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.form-22 input[type=checkbox] {
+    vertical-align: middle;
+    margin: -1px 5px 0 1px;
+}
+.form-99 {
+    /* Size and position */
+ 
+    margin: 0px auto 20px;
+    padding: 15px;
+    position: relative;
+
+    /* Styles */
+    background: #fffaf6;
+    border-radius: 4px;
+    color: #7e7975;
+    box-shadow:
+        0 2px 2px rgba(0,0,0,0.2),        
+        0 1px 5px rgba(0,0,0,0.2),        
+        0 0 0 12px rgba(255,255,255,0.4); 
+}
+
+.form-99 h1 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #bdb5aa;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #EBE6E2;
+    text-shadow: 0 2px 0 rgba(255,255,255,0.8);
+    box-shadow: 0 1px 0 rgba(255,255,255,0.8);
+}
+
+.form-99 h1 .log-in,
+.form-99 h1 .sign-up {
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.form-99 h1 .log-in {
+    color: #6c6763;
+    padding-right: 2px;
+}
+
+.form-99 h1 .sign-up {
+    color: #ffb347;
+    padding-left: 2px;
+}
+
+.form-99 .float {
+    width: 50%;
+    float: left;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,1);
+}
+
+.form-99 .float:first-of-type {
+    padding-right: 5px;
+}
+
+.form-99 .float:last-of-type {
+    padding-left: 5px;
+}
+
+.form-99 label {
+    display: block;
+    padding: 0 0 5px 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 0 1px 0 rgba(255,255,255,0.8);
+    font-size: 11px;
+}
+
+.form-99 label i {
+    margin-right: 5px; /* Gap between icon and text */
+    display: inline-block;
+    width: 10px;
+}
+
+.form-99 input[type=text],
+.form-99 textarea,
+.form-99 input[type=password] {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 13px;
+ 
+    display: block;
+    width:200px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 3px solid #ebe6e2;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.form-99 select {
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 13px;
+ 
+    display: block;
+    width:200px;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 3px solid #ebe6e2;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.form-99 input[type=text]:hover,
+.form-99 input[type=password] : hover,
+.form-99 select :hover {
+    border-color: #CCC;
+}
+
+.form-99 label:hover ~ input {
+    border-color: #CCC;
+}
+
+.form-99 input[type=text]:focus,
+.form-99 input[type=password]:focus {
+    border-color: #BBB;
+    outline: none; /* Remove Chrome's outline */
+}
+
+.form-99 input[type=submit],
+.form-99 .log-twitter {
+    /* Size and position */
+    width: 20%;
+    height: 38px;
+    float: left;
+    position: relative;
+
+    /* Styles */
+    box-shadow: inset 0 1px rgba(255,255,255,0.3);
+    border-radius: 3px;
+    cursor: pointer;
+
+    /* Font styles */
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 38px; /* Same as height */
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-99 input[type=submit] {
+    margin-left: 1%;
+    background: #fbd568; /* Fallback */
+    background: -moz-linear-gradient(#fbd568, #ffb347);
+    background: -ms-linear-gradient(#fbd568, #ffb347);
+    background: -o-linear-gradient(#fbd568, #ffb347);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#fbd568), to(#ffb347));
+    background: -webkit-linear-gradient(#fbd568, #ffb347);
+    background: linear-gradient(#fbd568, #ffb347);
+    border: 1px solid #f4ab4c;
+    color: #996319;
+    text-shadow: 0 1px rgba(255,255,255,0.3);
+}
+
+.form-99 .log-twitter {
+    margin-right: 1%;
+    background: #34a5cf; /* Fallback */
+    background: -moz-linear-gradient(#34a5cf, #2a8ac4);
+    background: -ms-linear-gradient(#34a5cf, #2a8ac4);
+    background: -o-linear-gradient(#34a5cf, #2a8ac4);
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#34a5cf), to(#2a8ac4));
+    background: -webkit-linear-gradient(#34a5cf, #2a8ac4);
+    background: linear-gradient(#34a5cf, #2a8ac4);
+    border: 1px solid #2b8bc7;
+    color: #ffffff;
+    text-shadow: 0 -1px rgba(0,0,0,0.3);
+    text-decoration: none;
+}
+
+.form-99 input[type=submit]:hover,
+.form-99 .log-twitter:hover {
+    box-shadow: 
+        inset 0 1px rgba(255,255,255,0.3), 
+        inset 0 20px 40px rgba(255,255,255,0.15);
+
+}
+
+.form-99 input[type=submit]:active,
+.form-99 .log-twitter:active{
+    top: 1px;
+}
+
+/* Fallback fro broswers that don't support box shadows */
+.no-boxshadow .form-99 input[type=submit]:hover {
+    background: #ffb347;
+}
+
+.no-boxshadow .form-99 .log-twitter:hover {
+    background: #2a8ac4;
+}
+
+.form-99 p:last-of-type {
+    clear: both;    
+}
+
+.form-99 .opt {
+    text-align: right;
+    margin-right: 3px;
+}
+
+.form-99 label[for=showPassword] {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.form-99 input[type=checkbox] {
+    vertical-align: middle;
+    margin: -1px 5px 0 1px;
+}
+
+text3D {
+font-size: 30px;font-family:Arial Rounded MT Bold;
+color:#eee;
+-webkit-transition: all .7s ease-out; 
+-moz-transition: all .7s ease-out; 
+-o-transition: all .7s ease-out; 
+transition: all .7s ease-out;
+text-shadow: 0 1px 0 #ccc,
+0 2px 0 #c9c9c9,
+0 3px 0 #bbb,
+0 4px 0 #b9b9b9,
+0 5px 0 #aaa,
+0 6px 1px rgba(0,0,0,.1),
+0 0 5px rgba(0,0,0,.1),
+0 1px 3px rgba(0,0,0,.3),
+0 3px 5px rgba(0,0,0,.2),
+0 5px 10px rgba(0,0,0,.25),
+0 10px 10px rgba(0,0,0,.2),
+0 20px 20px rgba(0,0,0,.15);}
+0 20px 20px rgba(0,0,0,.15);}
